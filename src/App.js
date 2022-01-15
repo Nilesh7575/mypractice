@@ -1,16 +1,13 @@
 import logo from "./logo.svg";
 import "./App.css";
 import "bootstrap/dist/css/bootstrap.min.css";
-import Hoc1 from "./HOC/Hoc1";
-import Hoc from "./HOC/Hoc";
-import Counter from "./useReducer/Counter";
+// import Hoc1 from "./HOC/Hoc1";
+// import Hoc from "./HOC/Hoc";
+// import Counter from "./useReducer/Counter";
 import TodoParent from "./ToDo/TodoParent";
 import Navigationbar from "./RouteAssignment/Navigationbar";
 import { BrowserRouter as Router, Route } from "react-router-dom";
-import Home from "./RouteAssignment/Home";
-import Contact from "./RouteAssignment/Contact";
-import About from "./RouteAssignment/About";
-import RandomColor from "./RndmBgrndColor/RandomColor";
+// import RandomColor from "./RndmBgrndColor/RandomColor";
 import FetchData from "./fetchFrom API/FetchData";
 import { Col, Container, Row } from "react-bootstrap";
 
@@ -22,7 +19,7 @@ function App() {
 
       {/* <Counter/> */}
 
-      {/* <TodoParent/> */}
+      <TodoParent/>
 
       {/* <Router>
         <Route path="/" component={Navigationbar} />

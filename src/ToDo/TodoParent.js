@@ -30,9 +30,9 @@ function TodoParent() {
           </div>
           <div>
             {list.map((ele)=>{
-                return <div key={ele.id}>
+                return <div key={ele.id} style={{display: "flex", justifyContent: "center", marginTop: "10px"}}>
                     <h5>{ele.data}</h5>
-                    <div>
+                    <div style={{marginLeft: "50px"}}>
                         <i className="far fa-trash-alt add-btn"
                         title="Delete Item" onClick={() => {
                         dispatch(deleteTodo(ele.id));
@@ -41,7 +41,7 @@ function TodoParent() {
               </div>
             })}
           </div>
-          <div>
+          <div style={{marginTop: "20px"}}>
               <button data-sm-link-text="remove all" 
               onClick={() => {dispatch(removeTodo())}}
                ><span>Check List</span></button>
